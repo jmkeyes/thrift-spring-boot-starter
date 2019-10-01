@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>8</java.version>
+		<libthrift.version>0.12.0</libthrift.version>
 	</properties>
 
 	<dependencies>
@@ -28,6 +29,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.thrift</groupId>
+			<artifactId>libthrift</artifactId>
+			<version>${libthrift.version}</version>
 		</dependency>
 	</dependencies>
 </project>
