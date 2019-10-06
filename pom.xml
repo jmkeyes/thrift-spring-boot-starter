@@ -16,7 +16,7 @@
 	<description>Spring Boot AutoConfiguration :: Apache Thrift Starter</description>
 
 	<properties>
-		<java.version>8</java.version>
+		<java.version>1.8</java.version>
 		<libthrift.version>0.12.0</libthrift.version>
 	</properties>
 
@@ -29,6 +29,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-stdlib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-reflect</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -46,4 +54,16 @@
 			<version>${libthrift.version}</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-maven-plugin</artifactId>
+				<configuration>
+					<jvmTarget>${java.version}</jvmTarget>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
