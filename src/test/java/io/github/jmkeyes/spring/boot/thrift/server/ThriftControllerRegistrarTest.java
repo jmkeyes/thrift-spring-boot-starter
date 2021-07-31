@@ -4,7 +4,7 @@ import io.github.jmkeyes.spring.boot.thrift.example.ExampleConfiguration;
 import io.github.jmkeyes.spring.boot.thrift.example.ExampleController;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.server.TServlet;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import javax.servlet.Servlet;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 public class ThriftControllerRegistrarTest {
