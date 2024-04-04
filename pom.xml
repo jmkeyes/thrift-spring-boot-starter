@@ -10,12 +10,14 @@
 
 	<groupId>io.github.jmkeyes</groupId>
 	<artifactId>thrift-spring-boot-starter</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>${revision}</version>
 
 	<name>thrift-spring-boot-starter</name>
 	<description>Spring Boot AutoConfiguration :: Apache Thrift Starter</description>
 
 	<properties>
+		<revision>1.0.0-SNAPSHOT</revision>
+
 		<java.version>8</java.version>
 
 		<libthrift.version>0.14.0</libthrift.version>
