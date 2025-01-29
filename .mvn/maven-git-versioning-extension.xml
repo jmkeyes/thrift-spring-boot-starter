@@ -5,23 +5,35 @@
         <!-- 0.0.0 -->
         <ref type="tag">
             <version>${ref}</version>
+            <properties>
+                <project.build.outputTimestamp>${commit.timestamp}</project.build.outputTimestamp>
+            </properties>
         </ref>
 
         <!-- 0.0.0-SNAPSHOT -->
         <ref type="branch">
             <pattern><![CDATA[master]]></pattern>
             <version>${describe.tag.version}-${describe.tag.version.label:-SNAPSHOT}</version>
+            <properties>
+                <project.build.outputTimestamp>${commit.timestamp}</project.build.outputTimestamp>
+            </properties>
         </ref>
 
         <!-- 0.0.0-${branch}-SNAPSHOT -->
         <ref type="branch">
             <pattern><![CDATA[.+]]></pattern>
             <version>${describe.tag.version}-${ref}-${describe.tag.version.label:-SNAPSHOT}</version>
+            <properties>
+                <project.build.outputTimestamp>${commit.timestamp}</project.build.outputTimestamp>
+            </properties>
         </ref>
     </refs>
 
     <!-- 0.0.0-N-CCCCCCC -->
     <rev>
         <version>${describe.tag.version}-${describe.distance}-${commit.short}</version>
+        <properties>
+            <project.build.outputTimestamp>${commit.timestamp}</project.build.outputTimestamp>
+        </properties>
     </rev>
 </configuration>

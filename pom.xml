@@ -18,6 +18,13 @@
 	<properties>
 		<java.version>8</java.version>
 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.outputTimestamp>${maven.build.timestamp}</project.build.outputTimestamp>
+
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven.compiler.release>${java.version}</maven.compiler.release>
+
 		<libthrift.version>0.14.0</libthrift.version>
 	</properties>
 
