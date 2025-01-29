@@ -1,3 +1,6 @@
+# Skip maven-git-versioning artifacts.
+.git-versioned-pom.xml
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
