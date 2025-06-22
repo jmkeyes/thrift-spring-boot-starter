@@ -49,4 +49,4 @@ Contributing
   2. Create your branch: `git checkout -b feature/branch`
   3. Commit your changes: `git commit -am "I am developer."`
   4. Push your changes: `git push origin feature/branch`
-  5. Create a PR of your branch against the `master` branch.
+  5. Create a PR of your branch against the `main` branch.
