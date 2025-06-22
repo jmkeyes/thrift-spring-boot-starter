@@ -12,7 +12,7 @@
 
         <!-- 0.0.0-SNAPSHOT -->
         <ref type="branch">
-            <pattern><![CDATA[master]]></pattern>
+            <pattern><![CDATA[main]]></pattern>
             <version>${describe.tag.version}-${describe.tag.version.label:-SNAPSHOT}</version>
             <properties>
                 <project.build.outputTimestamp>${commit.timestamp}</project.build.outputTimestamp>
