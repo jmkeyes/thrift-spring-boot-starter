@@ -2,6 +2,7 @@ package io.github.jmkeyes.spring.boot.thrift.server;
 
 import io.github.jmkeyes.spring.boot.thrift.example.ExampleConfiguration;
 import io.github.jmkeyes.spring.boot.thrift.example.ExampleController;
+import jakarta.servlet.Servlet;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.server.TServlet;
 import org.junit.jupiter.api.Test;
@@ -9,8 +10,6 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import javax.servlet.Servlet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
