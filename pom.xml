@@ -141,10 +141,8 @@
               <artifactId>maven-gpg-plugin</artifactId>
               <version>${maven.plugin.gpg.version}</version>
               <configuration>
-                <gpgArguments>
-                  <arg>--pinentry-mode</arg>
-                  <arg>loopback</arg>
-                </gpgArguments>
+                <bestPractices>true</bestPractices>
+                <signer>bc</signer>
               </configuration>
               <executions>
                 <execution>
