@@ -25,5 +25,5 @@ updates:
     schedule:
       interval: "weekly"
     ignore:
-      - dependency-name: "org.springframework.boot:spring-boot-starter"
+      - dependency-name: "org.springframework.boot:spring-boot-starter-parent"
         update-types: ["version-update:semver-major"]
