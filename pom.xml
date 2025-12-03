@@ -52,7 +52,7 @@
         <maven.plugin.source.version>3.4.0</maven.plugin.source.version>
         <maven.plugin.gpg.version>3.2.8</maven.plugin.gpg.version>
 
-        <libthrift.version>0.18.0</libthrift.version>
+        <libthrift.version>0.22.0</libthrift.version>
     </properties>
 
     <dependencies>
